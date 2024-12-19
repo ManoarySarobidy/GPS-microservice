@@ -1,19 +1,21 @@
 const express = require('express');
-const dotenv = require('dotenv');
+const { updateAllPositions } = require('./src/services/movementService');
 const gpsRoutes = require('./src/routes/gpsRoutes');
-
-dotenv.config(); // Charger les variables d'environnement du fichier .env
+const config = require('./config/config');
 
 const app = express();
-const port = process.env.PORT || 3000;
+const PORT = 3000;
 
-// Middleware pour parser le JSON dans les requêtes
-app.use(express.json());
-
-// Utiliser les routes GPS
+// Routes
 app.use('/api', gpsRoutes);
 
+// Mettre à jour les positions toutes les `X` millisecondes
+setInterval(() => {
+  updateAllPositions();
+  // console.log('Positions updated:', config.people.map(p => p.currentPosition));
+}, config.interval);
+
 // Démarrer le serveur
-app.listen(port, () => {
-  console.log(`Server is running on port  http://localhost:${port}`);
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
 });

@@ -1,16 +1,13 @@
-// const { getCoordinatesForPerson } = require('../services/movementService');
-const { generateCoordinatesForPerson } = require('../services/movementService');
+const config = require('../../config/config');
 
-// Cette fonction est appelée quand une requête GET est envoyée à /api/people/:id/coordinates
 exports.getCoordinates = (req, res) => {
-
-  
   const personId = parseInt(req.params.id);
-  const coordinates = generateCoordinatesForPerson(personId);
+  const person = config.people.find(p => p.id === personId);
 
-  if (!coordinates) {
+  if (!person) {
     return res.status(404).json({ message: 'Person not found' });
   }
 
-  res.json(coordinates);
+  console.log(`Coordinates for ${person.name}:`, person.currentPosition);
+  res.json(person.currentPosition);
 };
