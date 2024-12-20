@@ -10,14 +10,23 @@ const PORT = 3000;
 app.use(express.json());
 
 
-app.use('/api', gpsRoutes);
+// app.use('/api', gpsRoutes);
+// Routes
+app.get('/api/persons', (req, res) => {
+  res.json(config.people);
+});
 
+app.get('/api/persons/:id', (req, res) => {
+  const person = config.people.find(p => p.id === parseInt(req.params.id));
+  if (!person) return res.status(404).json({ message: 'Person not found' });
+  res.json(person);
+});
 // Routes pour l'API GPS
 
 // Mettre à jour les positions toutes les `X` millisecondes
 // setInterval(() => {
 //   updateAllPositions();
-//   // console.log('Positions updated:', config.people.map(p => p.currentPosition));
+//   console.log('Positions updated:', config.people.map(p => p.currentPosition));
 // }, config.interval);
 
 // Démarrer le serveur
