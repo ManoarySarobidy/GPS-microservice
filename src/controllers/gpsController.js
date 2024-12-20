@@ -1,4 +1,5 @@
 const config = require('../../config/config');
+const persons = require('../services/personsService');
 
 exports.getCoordinates = (req, res) => {
   const personId = parseInt(req.params.id);
@@ -10,4 +11,14 @@ exports.getCoordinates = (req, res) => {
 
   console.log(`Coordinates for ${person.name}:`, person.currentPosition);
   res.json(person.currentPosition);
+};
+
+exports.getPersons = () => {
+  try {
+    const p = persons.sendPersons();
+    console.json('Send persons:', p);
+  } catch (error) {
+    console.error('Error saving coordinates:', error.message);
+  }
+
 };

@@ -1,4 +1,5 @@
 const config = require('../../config/config');
+const axios = require('axios'); 
 
 // Génère une distance aléatoire entre 0 et 50 mètres
 const getRandomDistance = () => Math.random() * 50;
@@ -49,15 +50,37 @@ const updatePersonPosition = (person) => {
   const newCoordinates = moveInDirection(person.currentPosition, randomDirection, randomDistance);
   console.log(`${person.name}'s new position:`, newCoordinates);
   person.currentPosition = newCoordinates;
+  return newCoordinates;
 };
 
 
 // Fonction principale pour mettre à jour les positions de toutes les personnes
 const updateAllPositions = () => {
   config.people.forEach(person => {
-    updatePersonPosition(person);
+    const newCoordinates = updatePersonPosition(person);
+    sendCoordinatesToLaravel(person.id, newCoordinates.latitude, newCoordinates.longitude);
   });
 };
+
+
+// Fonction pour envoyer les coordonnées à l'API Laravel
+async function sendCoordinatesToLaravel(user_id, latitude, longitude) {
+  try {
+    const timestamp = new Date().toISOString();
+    
+    // Envoyer les coordonnées au backend Laravel
+    const response = await axios.post('http://127.0.0.1:8000/api/gps-coordinates', {
+      user_id,
+      latitude,
+      longitude,
+      date_time: timestamp,
+    });
+    
+    console.log('Coordinates successfully saved:', response.data);
+  } catch (error) {
+    console.error('Error saving coordinates:', error.message);
+  }
+}
 
 module.exports = {
   updateAllPositions,
