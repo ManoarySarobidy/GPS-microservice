@@ -2,165 +2,185 @@ module.exports = {
   people: [
     { 
       id: 1,
-      name: "Person 1",
-      email: "person1@example.com",
-      role: "admin",  // Rôle de la personne
-      startingCoordinates: { latitude: 48.8566, longitude: 2.3522 }, // Paris
-      currentPosition: { latitude: 48.8566, longitude: 2.3522 },
+      name: "Rakoto Andry",
+      email: "rakoto.andry@example.mg",
+      password: "password123",
+      role: "admin", 
+      startingCoordinates: { latitude: -18.8792, longitude: 47.5079 },
+      currentPosition: { latitude: -18.8792, longitude: 47.5079 },
     },
     { 
       id: 2,
-      name: "Person 2",
-      email: "person2@example.com",
-      role: "user",  // Rôle de la personne
-      startingCoordinates: { latitude: 40.7128, longitude: -74.0060 }, // New York
-      currentPosition: { latitude: 40.7128, longitude: -74.0060 },
+      name: "Rasoanaivo Tahina",
+      email: "rasoanaivo.tahina@example.mg",
+      password: "securePass456",
+      role: "user",  
+      startingCoordinates: { latitude: -18.8784, longitude: 47.5090 },
+      currentPosition: { latitude: -18.8784, longitude: 47.5090 },
     },
     { 
       id: 3,
-      name: "Person 3",
-      email: "person3@example.com",
-      role: "user",  // Rôle de la personne
-      startingCoordinates: { latitude: 34.0522, longitude: -118.2437 }, // Los Angeles
-      currentPosition: { latitude: 34.0522, longitude: -118.2437 },
+      name: "Randrianarivelo Faly",
+      email: "randrianarivelo.faly@example.mg",
+      password: "faly2024",
+      role: "user",  
+      startingCoordinates: { latitude: -18.8770, longitude: 47.5068 },
+      currentPosition: { latitude: -18.8770, longitude: 47.5068 },
     },
     { 
       id: 4,
-      name: "Person 4",
-      email: "person4@example.com",
-      role: "user",  // Rôle de la personne
-      startingCoordinates: { latitude: 51.5074, longitude: -0.1278 }, // London
-      currentPosition: { latitude: 51.5074, longitude: -0.1278 },
+      name: "Rasoamalala Sophie",
+      email: "rasoamalala.sophie@example.mg",
+      password: "sophieSecure@2023",
+      role: "user",  
+      startingCoordinates: { latitude: -18.8748, longitude: 47.5102 },
+      currentPosition: { latitude: -18.8748, longitude: 47.5102 },
     },
     { 
       id: 5,
-      name: "Person 5",
-      email: "person5@example.com",
-      role: "user",  // Rôle de la personne
-      startingCoordinates: { latitude: 48.8566, longitude: 2.3522 }, // Paris
-      currentPosition: { latitude: 48.8566, longitude: 2.3522 },
+      name: "Randriamihaja Eric",
+      email: "randriamihaja.eric@example.mg",
+      password: "Eric!pass321",
+      role: "user",  
+      startingCoordinates: { latitude: -18.8763, longitude: 47.5155 },
+      currentPosition: { latitude: -18.8763, longitude: 47.5155 },
     },
     { 
       id: 6,
-      name: "Person 6",
-      email: "person6@example.com",
-      role: "user",  // Rôle de la personne
-      startingCoordinates: { latitude: 40.730610, longitude: -73.935242 }, // Brooklyn
-      currentPosition: { latitude: 40.730610, longitude: -73.935242 },
+      name: "Rakotonirina Mia",
+      email: "rakotonirina.mia@example.mg",
+      password: "Mia#Code456",
+      role: "user",  
+      startingCoordinates: { latitude: -18.8812, longitude: 47.5067 },
+      currentPosition: { latitude: -18.8812, longitude: 47.5067 },
     },
     { 
       id: 7,
-      name: "Person 7",
-      email: "person7@example.com",
-      role: "user",  // Rôle de la personne
-      startingCoordinates: { latitude: 37.7749, longitude: -122.4194 }, // San Francisco
-      currentPosition: { latitude: 37.7749, longitude: -122.4194 },
+      name: "Raharimanana John",
+      email: "raharimanana.john@example.mg",
+      password: "JohnSuper123",
+      role: "user",  
+      startingCoordinates: { latitude: -18.8820, longitude: 47.5044 },
+      currentPosition: { latitude: -18.8820, longitude: 47.5044 },
     },
     { 
       id: 8,
-      name: "Person 8",
-      email: "person8@example.com",
-      role: "user",  // Rôle de la personne
-      startingCoordinates: { latitude: 40.7128, longitude: -74.0060 }, // New York
-      currentPosition: { latitude: 40.7128, longitude: -74.0060 },
+      name: "Rasoarivelo Jeanne",
+      email: "rasoarivelo.jeanne@example.mg",
+      password: "JeanneP@ssw0rd",
+      role: "user",  
+      startingCoordinates: { latitude: -18.8737, longitude: 47.5112 },
+      currentPosition: { latitude: -18.8737, longitude: 47.5112 },
     },
     { 
       id: 9,
-      name: "Person 9",
-      email: "person9@example.com",
-      role: "user",  // Rôle de la personne
-      startingCoordinates: { latitude: 43.651070, longitude: -79.347015 }, // Toronto
-      currentPosition: { latitude: 43.651070, longitude: -79.347015 },
+      name: "Andrianirina Clara",
+      email: "andrianirina.clara@example.mg",
+      password: "ClaraStrong#1",
+      role: "user",  
+      startingCoordinates: { latitude: -18.8751, longitude: 47.5125 },
+      currentPosition: { latitude: -18.8751, longitude: 47.5125 },
     },
     { 
       id: 10,
-      name: "Person 10",
-      email: "person10@example.com",
-      role: "user",  // Rôle de la personne
-      startingCoordinates: { latitude: 37.7749, longitude: -122.4194 }, // San Francisco
-      currentPosition: { latitude: 37.7749, longitude: -122.4194 },
+      name: "Randriamampionona Nicolas",
+      email: "randriamampionona.nicolas@example.mg",
+      password: "Nicolas2024!",
+      role: "user",  
+      startingCoordinates: { latitude: -18.8800, longitude: 47.5050 },
+      currentPosition: { latitude: -18.8800, longitude: 47.5050 },
     },
     { 
       id: 11,
-      name: "Person 11",
-      email: "person11@example.com",
-      role: "user",  // Rôle de la personne
-      startingCoordinates: { latitude: 48.2082, longitude: 16.3738 }, // Vienna
-      currentPosition: { latitude: 48.2082, longitude: 16.3738 },
+      name: "Rakotonindriana Paul",
+      email: "rakotonindriana.paul@example.mg",
+      password: "Paul@123456",
+      role: "user",  
+      startingCoordinates: { latitude: -18.8830, longitude: 47.5072 },
+      currentPosition: { latitude: -18.8830, longitude: 47.5072 },
     },
     { 
       id: 12,
-      name: "Person 12",
-      email: "person12@example.com",
-      role: "user",  // Rôle de la personne
-      startingCoordinates: { latitude: 39.9042, longitude: 116.4074 }, // Beijing
-      currentPosition: { latitude: 39.9042, longitude: 116.4074 },
+      name: "Razanamalala Olivia",
+      email: "razanamalala.olivia@example.mg",
+      password: "Olivia$789",
+      role: "user",  
+      startingCoordinates: { latitude: -18.8841, longitude: 47.5025 },
+      currentPosition: { latitude: -18.8841, longitude: 47.5025 },
     },
     { 
       id: 13,
-      name: "Person 13",
-      email: "person13@example.com",
-      role: "user",  // Rôle de la personne
-      startingCoordinates: { latitude: 34.0522, longitude: -118.2437 }, // Los Angeles
-      currentPosition: { latitude: 34.0522, longitude: -118.2437 },
+      name: "Ralaivao Jules",
+      email: "ralaivao.jules@example.mg",
+      password: "Jules@123Pass",
+      role: "user",  
+      startingCoordinates: { latitude: -18.8725, longitude: 47.5130 },
+      currentPosition: { latitude: -18.8725, longitude: 47.5130 },
     },
     { 
       id: 14,
-      name: "Person 14",
-      email: "person14@example.com",
-      role: "user",  // Rôle de la personne
-      startingCoordinates: { latitude: 52.5200, longitude: 13.4050 }, // Berlin
-      currentPosition: { latitude: 52.5200, longitude: 13.4050 },
+      name: "Ravelomanana Sarah",
+      email: "ravelomanana.sarah@example.mg",
+      password: "Sarah#456",
+      role: "user",  
+      startingCoordinates: { latitude: -18.8745, longitude: 47.5055 },
+      currentPosition: { latitude: -18.8745, longitude: 47.5055 },
     },
     { 
       id: 15,
-      name: "Person 15",
-      email: "person15@example.com",
-      role: "user",  // Rôle de la personne
-      startingCoordinates: { latitude: 37.7749, longitude: -122.4194 }, // San Francisco
-      currentPosition: { latitude: 37.7749, longitude: -122.4194 },
+      name: "Rajaonary Louis",
+      email: "rajaonary.louis@example.mg",
+      password: "LouisPass1234",
+      role: "user",  
+      startingCoordinates: { latitude: -18.8768, longitude: 47.5099 },
+      currentPosition: { latitude: -18.8768, longitude: 47.5099 },
     },
     { 
       id: 16,
-      name: "Person 16",
-      email: "person16@example.com",
-      role: "user",  // Rôle de la personne
-      startingCoordinates: { latitude: 48.8566, longitude: 2.3522 }, // Paris
-      currentPosition: { latitude: 48.8566, longitude: 2.3522 },
+      name: "Rakotomalala Eliane",
+      email: "rakotomalala.eliane@example.mg",
+      password: "ElianeP@ss",
+      role: "user",  
+      startingCoordinates: { latitude: -18.8719, longitude: 47.5120 },
+      currentPosition: { latitude: -18.8719, longitude: 47.5120 },
     },
     { 
       id: 17,
-      name: "Person 17",
-      email: "person17@example.com",
-      role: "user",  // Rôle de la personne
-      startingCoordinates: { latitude: 51.5074, longitude: -0.1278 }, // London
-      currentPosition: { latitude: 51.5074, longitude: -0.1278 },
+      name: "Andriamalala Felix",
+      email: "andriamalala.felix@example.mg",
+      password: "FelixSuper123",
+      role: "user",  
+      startingCoordinates: { latitude: -18.8835, longitude: 47.5088 },
+      currentPosition: { latitude: -18.8835, longitude: 47.5088 },
     },
     { 
       id: 18,
-      name: "Person 18",
-      email: "person18@example.com",
-      role: "user",  // Rôle de la personne
-      startingCoordinates: { latitude: 40.730610, longitude: -73.935242 }, // Brooklyn
-      currentPosition: { latitude: 40.730610, longitude: -73.935242 },
+      name: "Razafindranaivo Beatrice",
+      email: "razafindranaivo.beatrice@example.mg",
+      password: "Beatrice!pass",
+      role: "user",  
+      startingCoordinates: { latitude: -18.8700, longitude: 47.5150 },
+      currentPosition: { latitude: -18.8700, longitude: 47.5150 },
     },
     { 
       id: 19,
-      name: "Person 19",
-      email: "person19@example.com",
-      role: "user",  // Rôle de la personne
-      startingCoordinates: { latitude: 34.0522, longitude: -118.2437 }, // Los Angeles
-      currentPosition: { latitude: 34.0522, longitude: -118.2437 },
+      name: "Andriatsara Patrick",
+      email: "andriatsara.patrick@example.mg",
+      password: "Patrick@2024",
+      role: "user",  
+      startingCoordinates: { latitude: -18.8730, longitude: 47.5040 },
+      currentPosition: { latitude: -18.8730, longitude: 47.5040 },
     },
     { 
       id: 20,
-      name: "Person 20",
-      email: "person20@example.com",
-      role: "user",  // Rôle de la personne
-      startingCoordinates: { latitude: 40.7128, longitude: -74.0060 }, // New York
-      currentPosition: { latitude: 40.7128, longitude: -74.0060 },
+      name: "Ramaroson Clara",
+      email: "ramaroson.clara@example.mg",
+      password: "ClaraSecurePass",
+      role: "user",  
+      startingCoordinates: { latitude: -18.8720, longitude: 47.5105 },
+      currentPosition: { latitude: -18.8720, longitude: 47.5105 },
     },
   ],
-  directions: ['north', 'south', 'east', 'west', 'return'], // Ensemble des directions possibles
-  interval: 5000, // Intervalle en millisecondes pour générer une nouvelle coordonnée
+  directions: ['north', 'south', 'east', 'west', 'return'], // Directions possibles
+  interval: 5000, // Intervalle en millisecondes
 };
