@@ -50,38 +50,46 @@ const updatePersonPosition = (person) => {
   const newCoordinates = moveInDirection(person.currentPosition, randomDirection, randomDistance);
   console.log(`${person.name}'s new position:`, newCoordinates);
   person.currentPosition = newCoordinates;
-  return newCoordinates;
+  person.last_time_seen = new Date().toISOString();
+  return person;
 };
 
 
 // Fonction principale pour mettre à jour les positions de toutes les personnes
 const updateAllPositions = () => {
   config.people.forEach(person => {
-    const newCoordinates = updatePersonPosition(person);
-    sendCoordinatesToLaravel(person.id, newCoordinates.latitude, newCoordinates.longitude);
+    return updatePersonPosition(person);
+
+    // sendCoordinatesToLaravel(person.id, newCoordinates.latitude, newCoordinates.longitude);
   });
 };
 
 
 // Fonction pour envoyer les coordonnées à l'API Laravel
-async function sendCoordinatesToLaravel(user_id, latitude, longitude) {
-  try {
-    const timestamp = new Date().toISOString();
+// async function sendCoordinatesToLaravel(user_id, latitude, longitude) {
+//   try {
+//     const timestamp = new Date().toISOString();
     
-    // Envoyer les coordonnées au backend Laravel
-    const response = await axios.post('http://127.0.0.1:8000/api/gps-coordinates', {
-      user_id,
-      latitude,
-      longitude,
-      date_time: timestamp,
-    });
+//     // Envoyer les coordonnées au backend Laravel
+//     await axios.post(`http://127.0.0.1:8000/api/gps-coordinates/${user_id}`, {
+//       user_id,
+//       latitude,
+//       longitude,
+//       date_time: timestamp,
+//     }).then( function(data) {
+//       console.log(data);
+//     } ).catch( function (error) {
+//       console.error("lmmlqkmldkq " + error);
+//     });
     
-    console.log('Coordinates successfully saved:', response.data);
-  } catch (error) {
-    console.error('Error saving coordinates:', error.message);
-  }
-}
+//     // console.log('Coordinates successfully saved:', response.data);
+//   } catch (error) {
+//     console.error('Error sending coordinates:', error);
+//   }
+// }
 
 module.exports = {
   updateAllPositions,
+  updatePersonPosition,
+  // sendCoordinatesToLaravel,
 };

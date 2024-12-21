@@ -8,6 +8,7 @@ module.exports = {
       role: "admin", 
       startingCoordinates: { latitude: -18.8792, longitude: 47.5079 },
       currentPosition: { latitude: -18.8792, longitude: 47.5079 },
+      last_time_seen: undefined
     },
     { 
       id: 2,
@@ -17,6 +18,8 @@ module.exports = {
       role: "user",  
       startingCoordinates: { latitude: -18.8784, longitude: 47.5090 },
       currentPosition: { latitude: -18.8784, longitude: 47.5090 },
+      last_time_seen: undefined
+
     },
     { 
       id: 3,
@@ -26,6 +29,8 @@ module.exports = {
       role: "user",  
       startingCoordinates: { latitude: -18.8770, longitude: 47.5068 },
       currentPosition: { latitude: -18.8770, longitude: 47.5068 },
+      last_time_seen: undefined
+
     },
     { 
       id: 4,
@@ -35,6 +40,8 @@ module.exports = {
       role: "user",  
       startingCoordinates: { latitude: -18.8748, longitude: 47.5102 },
       currentPosition: { latitude: -18.8748, longitude: 47.5102 },
+      last_time_seen: undefined
+
     },
     { 
       id: 5,
@@ -44,6 +51,8 @@ module.exports = {
       role: "user",  
       startingCoordinates: { latitude: -18.8763, longitude: 47.5155 },
       currentPosition: { latitude: -18.8763, longitude: 47.5155 },
+      last_time_seen: undefined
+
     },
     { 
       id: 6,
@@ -53,6 +62,8 @@ module.exports = {
       role: "user",  
       startingCoordinates: { latitude: -18.8812, longitude: 47.5067 },
       currentPosition: { latitude: -18.8812, longitude: 47.5067 },
+      last_time_seen: undefined
+
     },
     { 
       id: 7,
@@ -62,6 +73,8 @@ module.exports = {
       role: "user",  
       startingCoordinates: { latitude: -18.8820, longitude: 47.5044 },
       currentPosition: { latitude: -18.8820, longitude: 47.5044 },
+      last_time_seen: undefined
+
     },
     { 
       id: 8,
@@ -71,6 +84,8 @@ module.exports = {
       role: "user",  
       startingCoordinates: { latitude: -18.8737, longitude: 47.5112 },
       currentPosition: { latitude: -18.8737, longitude: 47.5112 },
+      last_time_seen: undefined
+
     },
     { 
       id: 9,
@@ -80,6 +95,8 @@ module.exports = {
       role: "user",  
       startingCoordinates: { latitude: -18.8751, longitude: 47.5125 },
       currentPosition: { latitude: -18.8751, longitude: 47.5125 },
+      last_time_seen: undefined
+
     },
     { 
       id: 10,
@@ -89,6 +106,8 @@ module.exports = {
       role: "user",  
       startingCoordinates: { latitude: -18.8800, longitude: 47.5050 },
       currentPosition: { latitude: -18.8800, longitude: 47.5050 },
+      last_time_seen: undefined
+
     },
     { 
       id: 11,
@@ -98,6 +117,8 @@ module.exports = {
       role: "user",  
       startingCoordinates: { latitude: -18.8830, longitude: 47.5072 },
       currentPosition: { latitude: -18.8830, longitude: 47.5072 },
+      last_time_seen: undefined
+
     },
     { 
       id: 12,
@@ -107,6 +128,8 @@ module.exports = {
       role: "user",  
       startingCoordinates: { latitude: -18.8841, longitude: 47.5025 },
       currentPosition: { latitude: -18.8841, longitude: 47.5025 },
+      last_time_seen: undefined
+
     },
     { 
       id: 13,
@@ -116,6 +139,8 @@ module.exports = {
       role: "user",  
       startingCoordinates: { latitude: -18.8725, longitude: 47.5130 },
       currentPosition: { latitude: -18.8725, longitude: 47.5130 },
+      last_time_seen: undefined
+
     },
     { 
       id: 14,
@@ -125,6 +150,8 @@ module.exports = {
       role: "user",  
       startingCoordinates: { latitude: -18.8745, longitude: 47.5055 },
       currentPosition: { latitude: -18.8745, longitude: 47.5055 },
+      last_time_seen: undefined
+
     },
     { 
       id: 15,
@@ -134,6 +161,8 @@ module.exports = {
       role: "user",  
       startingCoordinates: { latitude: -18.8768, longitude: 47.5099 },
       currentPosition: { latitude: -18.8768, longitude: 47.5099 },
+      last_time_seen: undefined
+
     },
     { 
       id: 16,
@@ -143,6 +172,8 @@ module.exports = {
       role: "user",  
       startingCoordinates: { latitude: -18.8719, longitude: 47.5120 },
       currentPosition: { latitude: -18.8719, longitude: 47.5120 },
+      last_time_seen: undefined
+
     },
     { 
       id: 17,
@@ -152,6 +183,8 @@ module.exports = {
       role: "user",  
       startingCoordinates: { latitude: -18.8835, longitude: 47.5088 },
       currentPosition: { latitude: -18.8835, longitude: 47.5088 },
+      last_time_seen: undefined
+
     },
     { 
       id: 18,
@@ -161,6 +194,8 @@ module.exports = {
       role: "user",  
       startingCoordinates: { latitude: -18.8700, longitude: 47.5150 },
       currentPosition: { latitude: -18.8700, longitude: 47.5150 },
+      last_time_seen: undefined
+
     },
     { 
       id: 19,
@@ -170,6 +205,8 @@ module.exports = {
       role: "user",  
       startingCoordinates: { latitude: -18.8730, longitude: 47.5040 },
       currentPosition: { latitude: -18.8730, longitude: 47.5040 },
+      last_time_seen: undefined
+
     },
     { 
       id: 20,
@@ -179,6 +216,8 @@ module.exports = {
       role: "user",  
       startingCoordinates: { latitude: -18.8720, longitude: 47.5105 },
       currentPosition: { latitude: -18.8720, longitude: 47.5105 },
+      last_time_seen: undefined
+
     },
   ],
   directions: ['north', 'south', 'east', 'west', 'return'], // Directions possibles
