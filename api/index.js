@@ -3,9 +3,7 @@ const { updateAllPositions } = require('../src/services/movementService');
 const gpsRoutes = require('../src/routes/gpsRoutes');
 const config = require('../config/config');
 const app = express();
-const PORT = 3000;
 
-app.get("/", (req, res) => res.send("Express on Vercel"));
 app.use(express.json());
 app.use('/coordinates', gpsRoutes);
 app.get('/api/persons', (req, res) => {
@@ -15,6 +13,7 @@ app.get('/api/persons', (req, res) => {
 app.get('/', (req, res) => {
   res.json("Helllo");
 });
+
 
 app.get('/api/persons/:id', (req, res) => {
   const person = config.people.find(p => p.id === parseInt(req.params.id));
@@ -26,6 +25,11 @@ setInterval(() => {
   updateAllPositions();
   console.log('Positions updated:', config.people.map(p => p.currentPosition));
 }, config.interval);
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
+});
 
 module.exports=app;
 
