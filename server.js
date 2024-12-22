@@ -26,22 +26,6 @@ app.get('/api/persons/:id', (req, res) => {
 });
 
 
-io.on('connection', (socket) => {
-  console.log('New client connected');
-  
-  // Listen for messages from Laravel client
-  socket.on('message', (data) => {
-      console.log('Received message from Laravel:', data);
-      // Send a message back to Laravel
-      socket.emit('message', { message: 'Hello from Node.js' });
-  });
-
-  socket.on('disconnect', () => {
-      console.log('Client disconnected');
-  });
-
-});
-
 // Mettre à jour les positions toutes les `X` millisecondes
 setInterval(() => {
   updateAllPositions();
