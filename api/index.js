@@ -5,14 +5,11 @@ const config = require('../config/config');
 const app = express();
 const PORT = 3000;
 
+app.get("/", (req, res) => res.send("Express on Vercel"));
 app.use(express.json());
 app.use('/coordinates', gpsRoutes);
 app.get('/api/persons', (req, res) => {
   res.json(config.people);
-});
-
-app.get('/', (req, res) => {
-  res.json("Helllo");
 });
 
 
@@ -27,7 +24,8 @@ setInterval(() => {
   console.log('Positions updated:', config.people.map(p => p.currentPosition));
 }, config.interval);
 
-app.listen(PORT, () => {
+app.listen(PORT, (req, res) => {
+  res.json("Helllo");
   console.log(`Server running on http://localhost:${PORT}`);
 });
 
