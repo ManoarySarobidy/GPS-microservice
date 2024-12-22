@@ -20,6 +20,6 @@
     "test": "tests"
   },
   "devDependencies": {
-    "nodemon": "^3.1.9"
+    "node": "^22.12.0"
   }
 }
