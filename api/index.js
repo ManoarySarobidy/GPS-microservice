@@ -12,6 +12,9 @@ app.get('/api/persons', (req, res) => {
   res.json(config.people);
 });
 
+app.get('/', (req, res) => {
+  res.json("Helllo");
+});
 
 app.get('/api/persons/:id', (req, res) => {
   const person = config.people.find(p => p.id === parseInt(req.params.id));
