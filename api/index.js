@@ -27,10 +27,5 @@ setInterval(() => {
   console.log('Positions updated:', config.people.map(p => p.currentPosition));
 }, config.interval);
 
-app.listen(PORT, (req, res) => {
-  res.json("Helllo");
-  console.log(`Server running on http://localhost:${PORT}`);
-});
-
 module.exports=app;
 
