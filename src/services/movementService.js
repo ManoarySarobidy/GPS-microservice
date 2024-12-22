@@ -46,9 +46,9 @@ const moveInDirection = (currentPosition, direction) => {
 const updatePersonPosition = (person) => {
   const randomDirection = getRandomDirection();
   const randomDistance = getRandomDistance();
-  console.log(`${person.name} moves ${randomDistance.toFixed(2)}m ${randomDirection}`);
+  // console.log(`${person.name} moves ${randomDistance.toFixed(2)}m ${randomDirection}`);
   const newCoordinates = moveInDirection(person.currentPosition, randomDirection, randomDistance);
-  console.log(`${person.name}'s new position:`, newCoordinates);
+  // console.log(`${person.name}'s new position:`, newCoordinates);
   person.currentPosition = newCoordinates;
   person.last_time_seen = new Date().toISOString();
   return person;
