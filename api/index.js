@@ -6,7 +6,7 @@ const app = express();
 const PORT = 3000;
 
 app.use(express.json());
-app.use('/coordinates', gpsRoutes);
+app.use('/', gpsRoutes);
 app.get('/api/persons', (req, res) => {
   res.json(config.people);
 });
